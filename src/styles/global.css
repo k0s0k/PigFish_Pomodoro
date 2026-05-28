@@ -1,0 +1,63 @@
+:root {
+  --pink-100: #fce4ec;
+  --pink-200: #f8bbd0;
+  --pink-300: #f48fb1;
+  --pink-400: #f06292;
+  --pink-500: #ec407a;
+  --pink-600: #d81b60;
+  --bg-primary: #fff0f5;
+  --bg-secondary: #fff5f7;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --text-primary: #5d4037;
+  --text-secondary: #8d6e63;
+  --shadow: 0 4px 20px rgba(236, 64, 122, 0.15);
+  --shadow-lg: 0 8px 32px rgba(236, 64, 122, 0.2);
+  --radius: 20px;
+  --radius-sm: 12px;
+
+  /* timer ring */
+  --ring-work: #ec407a;
+  --ring-break: #66bb6a;
+  --ring-bg: #fce4ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: transparent;
+  color: var(--text-primary);
+  overflow: hidden;
+  user-select: none;
+  -webkit-app-region: no-drag;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pink-300);
+  border-radius: 2px;
+}
+
+/* drag region for frameless window */
+.drag-region {
+  -webkit-app-region: drag;
+}
+.no-drag {
+  -webkit-app-region: no-drag;
+}
